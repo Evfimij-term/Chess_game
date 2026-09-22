@@ -18,6 +18,9 @@ def click_handling_on_board(x, y):
         selected_piece.where_selected[1] = y
 
 def check_piece(x, y):
+    check_L(x, y)
+
+def check_L(x, y):
     if selected_piece.what_selected == "Л":
         x0 = selected_piece.where_selected[0]
         y0 = selected_piece.where_selected[1]
